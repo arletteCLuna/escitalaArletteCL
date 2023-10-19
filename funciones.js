@@ -11,7 +11,7 @@ function calcularCaracteres() {
   document.getElementById("caracteresPermitidos").textContent = caracteresPermitidos;
   document.getElementById("caracteresPermitidosLabel").textContent = caracteresPermitidos;
 
-  // Habilitar el campo de texto del mensaje y establecer la longitud máxima
+ 
   document.getElementById("mensaje").disabled = false;
   document.getElementById("mensaje").maxLength = caracteresPermitidos;
 }
@@ -52,7 +52,7 @@ function escitalaCifrar(mensaje, lados) {
       }
   }
 
-  return mensajeCifrado.join(''); // Devolver como una cadena
+  return mensajeCifrado.join(''); 
 }
 
 function escitalaDescifrar(mensajeCifrado, lados) {
