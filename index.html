@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Cifrado de Transposición escitala</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-</head>
-
-<body>
+  <head>
+    <title>Cifrado Escitala</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="./funciones.js"></script>
+  </head>
+  <header>
+    
+  </header>
+  <body>
     <h1>Arlette Cruz Luna 7B</h1>
     <h1>- - - Cifrado de Transposición - - -</h1>
     <h1>Escitala</h1>
-    <div>
-        <label for="inputText">Mensaje:</label><br>
-        <input id="inputText" type="text" />
-    </div>
-    <div>
-        <label for="shift">Desplazamiento:</label><br>
-        <input id="shift" type="number" />
-    </div>
-    <button id="encryptButton">Cifrar</button>
-    <button id="decryptButton">Descifrar</button>
-    <div>
-        <h2>Resultado:</h2>
-        <p id="result"></p>
-    </div>
+    
+    <label for="lados">Introduce los lados del prisma (Tiene que ser entero): </label>
+    <input type="text" id="lados" placeholder="Número de lados"><br>
 
-    <script src="funciones.js"></script>
+    <label for="vueltas">Número de vueltas(entero): </label>
+    <input type="text" id="vueltas" placeholder="Número de vueltas"><br>
+
+    <button onclick="calcularCaracteres()">Calcular número de Caracteres</button>
+
+    <p>Número de caracteres permitidos: <span id="caracteresPermitidos">0</span></p>
+
+    <label for="mensaje">Mensaje (máximo <span id="caracteresPermitidosLabel">0</span> caracteres):</label>
+    <textarea id="mensaje" rows="4" cols="50"></textarea><br>
+
+    <button onclick="cifrarMensaje()">Cifrar</button>
+    <button onclick="descifrarMensaje()">Descifrar</button>
+
+    <p>Resultado: <span id="resultado"></span></p>
 </body>
-
 </html>
