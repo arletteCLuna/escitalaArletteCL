@@ -41,7 +41,7 @@ button:a{
 }
 
 button:hover {
-  background-color: #FFA500; /* Cambio de color en el botón al pasar el ratón (naranja) */
+  background-color: #FFA500; 
 }
 
 h2 {
