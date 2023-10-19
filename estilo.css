@@ -1,38 +1,76 @@
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
+  background-color: #000; 
+  font-family: 'Arial', sans-serif;
+  color: #ffffff; 
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color:#ffffff;
+}
+p{color: white;
+  font-size: medium;}
   
-  h1 {
-    color: #333;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input[type="text"], input[type="number"] {
-    padding: 13px;
+
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+  padding: 13px;
     margin: 5px;
     width: 30%; 
     text-align: center; 
     font-size: 18px;
-  }
-  
-  button {
-    padding: 10px 20px;
+}
+
+button {
+  padding: 10px 20px;
     background-color: purple;
     color: white;
     border: none;
     cursor: pointer;
+}
+button:a{
+  color: white;
+  font-size: medium;
+}
+
+button:hover {
+  background-color: #FFA500; /* Cambio de color en el botón al pasar el ratón (naranja) */
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#resultado {
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #131313;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+p {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 24px;
   }
-  
-  button:hover {
-    background-color: #8535A0; /* Color morado más oscuro al pasar el mouse */
+  label {
+      font-size: 18px;
   }
-  
-  p {
-    font-weight: bold;
-    margin-top: 20px;
+  input, button {
+      font-size: 16px;
   }
+}
   
